@@ -1,12 +1,12 @@
-time = 60*60 *1000
-print(time)
+import datetime as dt
 
-hms= 3600000*24
-dms = hms*30
-mms = dms*12
-yms = mms* 25
+# 현재 날짜와 시각을 통째로 가져오기
+time = dt.datetime.now()
+print("현재 날짜와 시각:", time)
 
-print(yms)
+# 타임스탬프
+timestamp = time.timestamp()
+print("타임스탬프:", timestamp) 
 
 
 
